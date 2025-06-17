@@ -1,11 +1,13 @@
 public class Main6 {
     public static void main(String[] args) {
-        for (int i=0; i<5; i++){
-            for (int j=0; j<4-i; j++){
-                System.out.print(" ");
-            }
-            for (int k=0; k<i+1; k++){
-                System.out.print("*");
+        for (int x = 0; x < 5; x++) {
+            for (int y = 0; y < 5; y++) {
+                if (y >= -x + 4) {
+                    System.out.print("*");
+                }
+                else{
+                   System.out.print(" ");
+                }
             }
             System.out.println();
         }
