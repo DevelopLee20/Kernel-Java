@@ -1,14 +1,10 @@
 public class Main4 {
     public static void main(String[] args) {
-        int[][] array = new int[5][5];
-        for(int i=0; i<5; i++) {
-            array[i][i] = 1;
-            array[i][4-i] = 1;
-        }
+        int N = 5;
 
-        for (int i=0; i<5; i++){
-            for(int j=0; j<5; j++){
-                if (array[i][j] == 1){
+        for(int x=0; x<N; x++){
+            for(int y=0; y<N; y++){
+                if(y == x || (y == (-x + 4))){
                     System.out.print("*");
                 }
                 else{
