@@ -2,16 +2,16 @@ public class Main10 {
     public static void main(String[] args) {
         int N = 5;
 
-        for(int x=0; x<N; x++){
-            for(int y=0; y<N; y++){
-                if(y <= x && y <= (-x + 4) || (y >= x && y >= (-x + 4))){
+        for (int x = 0; x < N; x++) {
+            for (int y = 0; y < N; y++) {
+                if (y <= x && y <= (-x + 4) || (y >= x && y >= (-x + 4))) {
                     System.out.print("*");
-                }
-                else{
+                } else {
                     System.out.print(" ");
                 }
             }
             System.out.println();
         }
+        System.out.println(3/0.0);
     }
 }
